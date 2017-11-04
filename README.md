@@ -81,12 +81,12 @@
     5. Selesai!!!
   * #### Wordpress
     1. Dowload Wordpress dengan perintah seperti berikut
-    >'''wget http://wordpress.org/latest.zip'''
+    >```wget http://wordpress.org/latest.zip```
     2. Extract file ke /var/www/html
-    >'''sudo unzip latest.zip -d /var/www/html'''
+    >```sudo unzip latest.zip -d /var/www/html```
     3. Ganti kepemilikan dan hak akses dari folder wordpress
-    >'''sudo chown -R www-data:www-data /var/www/html/wordpress///
-        sudo chmod -R 775 /var/www/html/wordpress/'''
+    >```sudo chown -R www-data:www-data /var/www/html/wordpress///
+        sudo chmod -R 775 /var/www/html/wordpress/```
     4. Berikan Port Forwarding Rules ke Vitual Machine agar dapat diakses dari luar
     5. Berikan rules firewall di ubuntu server, lalu restart firewall
     6. Buka mysql, lalu buat database dengan nama wordpress
