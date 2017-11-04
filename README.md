@@ -25,3 +25,69 @@
   * #### sqlmap
     sqlmap adalah alat pengujian open source yang mendeteksi dan mengeksploitasi kelemahan dalam SQL injection dan mengambil alih server database. Muncul dengan mesin pendeteksi yang hebat, banyak fitur untuk tester penetrasi akhir dan berbagai switch yang bertahan dari sidik jari database, melebihi pengambilan data dari database, untuk mengakses sistem berkas yang mendasarinya dan menjalankan perintah pada sistem operasi melalui sistem out- koneksi band.
     Mendukung  DBMS MySQL, Oracle, PostgreSQL, Microsoft SQL Server, Microsoft Access, IBM DB2, SQLite, Firebird, Sybase, SAP MaxDB, HSQLDB dan Informix.
+
+### Instalasi Ubuntu Server + OpenSSH Server
+
+  1. Download file instalasi Ubuntu Server dan mount ke virtual machine
+      https://www.ubuntu.com/download/server
+      
+  2. Pilih "*Install Ubuntu Server*"
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-choose-server.png)
+  3. Set Hostname, Username, dan Password
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-host-server.png)
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-user-server.png)
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-pwd-server.png)
+  4. Set Partition Disk Menjadi *Guided - use entire disk*
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-part-server.png)
+  5. Tunggu instalasi selesai
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-wait-server.png)
+  6. Lakukan konfigurasi lainnnya
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/config-taskkel-server.png)
+  7. Pilih software yang akan diinstall
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-soft-server.png)
+  8. Tunggu instalasi software
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-soft-wait-server.png)
+  9. Install Bootloader Grub
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-grub-server.png)
+  10. Selesai!!!
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/done-server.png)
+### Instalasi Kali Linux
+  
+  1. Download file instalasi Kali Linux dan mount ke virtual machine
+      https://www.kali.org/downloads/
+
+  2. Pilih *Graphical Install*
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-choose-kali.png)
+  3. Set Hostname, Username, dan Password
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-host-kali.png)
+      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-user-kali.png)
+  4. Set Partition Disk menjadi *Guided - use entire disk*
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-part-kali.png)
+  5. Set Disk yang akan dibuat menjadi partisi
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-disk-kali.png)
+  6. Set Partition Scheme menjadi *All files in one partition*
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-scheme-kali.png)
+  7. Tunggu Instalasi Selesai
+     ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-wait-kali.png)
+  8. Selesai!!!
+
+### Instalasi LAMP server dan Wordpress di Ubuntu Server
+  * #### LAMP server
+    1. Gunakan perintah seperti berikut
+     >'''sudo tasksel install_lamp-server'''
+    2. Tunggu file didownload
+    3. Set password untuk user root dari mysql
+    4. Tunggu instalasi selesai
+    5. Selesai!!!
+  * #### Wordpress
+    1. Dowload Wordpress dengan perintah seperti berikut
+    >'''wget http://wordpress.org/latest.zip'''
+    2. Extract file ke /var/www/html
+    >'''sudo unzip latest.zip -d /var/www/html'''
+    3. Ganti kepemilikan dan hak akses dari folder wordpress
+    >'''sudo chown -R www-data:www-data /var/www/html/wordpress///
+        sudo chmod -R 775 /var/www/html/wordpress/'''
+    4. Berikan Port Forwarding Rules ke Vitual Machine agar dapat diakses dari luar
+    5. Berikan rules firewall di ubuntu server, lalu restart firewall
+    6. Buka mysql, lalu buat database dengan nama wordpress
+    7.
