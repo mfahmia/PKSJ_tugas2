@@ -108,7 +108,7 @@
       Lakukan tes dengan cara berikut
     > ```wpscan --url http://192.168.1.1 --enumerate -u```
     
-    * sqlmap
+   * sqlmap
     > ```oeeoaeoaeoaeaoeo```
 
 ### Kesimpulan dan Saran
