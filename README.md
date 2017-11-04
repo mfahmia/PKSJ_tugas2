@@ -72,38 +72,39 @@
   8. Selesai!!!
 
 ### Instalasi LAMP server
-    1. Gunakan perintah seperti berikut
+
+  1. Gunakan perintah seperti berikut
      >```sudo tasksel install_lamp-server```
-    2. Tunggu file didownload
-    3. Set password untuk user root dari mysql
-    4. Tunggu instalasi selesai
-    5. Selesai!!!
+  2. Tunggu file didownload
+  3. Set password untuk user root dari mysql
+  4. Tunggu instalasi selesai
+  5. Selesai!!!
     
 ### Instalasi Wordpress
-    1. Dowload Wordpress dengan perintah seperti berikut
-    >```wget http://wordpress.org/latest.zip```
-    2. Extract file ke /var/www/html
-    >```sudo unzip latest.zip -d /var/www/html```
-    3. Ganti kepemilikan dan hak akses dari folder wordpress
-    >```sudo chown -R www-data:www-data /var/www/html/wordpress///```
-    >```sudo chmod -R 775 /var/www/html/wordpress/```
-    4. Berikan Port Forwarding Rules ke Vitual Machine agar dapat diakses dari luar
-    5. Berikan rules firewall di ubuntu server, lalu restart firewall
-    6. Buka mysql, lalu buat database dengan nama wordpress
-    7. Buka halaman depan dari Wordpress, lalu akan ada inisialisasi
-    8. Isi konfigurasi database dengan yang telah dibuat sebelumnya
-    9. Set konfigurasi website
-    10. Selesai!!!
+  1. Dowload Wordpress dengan perintah seperti berikut
+  >```wget http://wordpress.org/latest.zip```
+  2. Extract file ke /var/www/html
+  >```sudo unzip latest.zip -d /var/www/html```
+  3. Ganti kepemilikan dan hak akses dari folder wordpress
+  >```sudo chown -R www-data:www-data /var/www/html/wordpress///```
+  >```sudo chmod -R 775 /var/www/html/wordpress/```
+  4. Berikan Port Forwarding Rules ke Vitual Machine agar dapat diakses dari luar
+  5. Berikan rules firewall di ubuntu server, lalu restart firewall
+  6. Buka mysql, lalu buat database dengan nama wordpress
+  7. Buka halaman depan dari Wordpress, lalu akan ada inisialisasi
+  8. Isi konfigurasi database dengan yang telah dibuat sebelumnya
+  9. Set konfigurasi website
+  10. Selesai!!!
 
 ### Instalasi Plugin
-    1. Masuk ke menu Plugin -> Add New
+   1. Masuk ke menu Plugin -> Add New
     2. Klik tombol Upload Plugin
     3. Pilih file plugin, lalu klik Install Now
     4. Tunggu instalasi selesai
     5. Selesai!!!
  
 ### Uji Penetrasi
-    * #### WPScan
+   * #### WPScan
       Lakukan tes dengan cara berikut
     > ```wpscan --url http://192.168.1.1 --enumerate -u```
     
@@ -111,4 +112,4 @@
     > ```oeeoaeoaeoaeaoeo```
 
 ### Kesimpulan dan Saran
-    Serangan SQL Injection adalah memodifikasi perintah sql dari aplikasi client dengan cara menyisipkan kedalamnya. Dalam hal ini terdapat plugin dari wordpress yang tidak di optimasi querynya, sehingga rentan SQL Injection tersebut. Dengan tools tools tersebut, developer dapat memeriksa keamanan dari plugin dan seisi websitenya, sehingga developer dapat memperbaharui plugin atau mengganti plugin yang tidak aman.
+   Serangan SQL Injection adalah memodifikasi perintah sql dari aplikasi client dengan cara menyisipkan kedalamnya. Dalam hal ini terdapat plugin dari wordpress yang tidak di optimasi querynya, sehingga rentan SQL Injection tersebut. Dengan tools tools tersebut, developer dapat memeriksa keamanan dari plugin dan seisi websitenya, sehingga developer dapat memperbaharui plugin atau mengganti plugin yang tidak aman.
