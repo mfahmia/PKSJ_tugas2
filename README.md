@@ -71,16 +71,15 @@
      ![SS](https://github.com/fandyaditya/PKSJ/blob/master/Tugas%201/Gambar/install-wait-kali.png)
   8. Selesai!!!
 
-### Instalasi LAMP server dan Wordpress di Ubuntu Server
-  * #### LAMP server
+### Instalasi LAMP server
     1. Gunakan perintah seperti berikut
-     >'''sudo tasksel install_lamp-server'''
+     >```sudo tasksel install_lamp-server```
     2. Tunggu file didownload
     3. Set password untuk user root dari mysql
     4. Tunggu instalasi selesai
     5. Selesai!!!
     
-  * #### Wordpress
+### Instalasi Wordpress
     1. Dowload Wordpress dengan perintah seperti berikut
     >```wget http://wordpress.org/latest.zip```
     2. Extract file ke /var/www/html
@@ -96,5 +95,20 @@
     9. Set konfigurasi website
     10. Selesai!!!
 
+### Instalasi Plugin
+    1. Masuk ke menu Plugin -> Add New
+    2. Klik tombol Upload Plugin
+    3. Pilih file plugin, lalu klik Install Now
+    4. Tunggu instalasi selesai
+    5. Selesai!!!
+ 
 ### Uji Penetrasi
+    * #### WPScan
+      Lakukan tes dengan cara berikut
+    > ```wpscan --url http://192.168.1.1 --enumerate -u```
     
+    * sqlmap
+    > ```oeeoaeoaeoaeaoeo```
+
+### Kesimpulan dan Saran
+    Serangan SQL Injection adalah memodifikasi perintah sql dari aplikasi client dengan cara menyisipkan kedalamnya. Dalam hal ini terdapat plugin dari wordpress yang tidak di optimasi querynya, sehingga rentan SQL Injection tersebut. Dengan tools tools tersebut, developer dapat memeriksa keamanan dari plugin dan seisi websitenya, sehingga developer dapat memperbaharui plugin atau mengganti plugin yang tidak aman.
